@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="leaves">
+        <div class="set">
+          <div><img src="./Images/leaf_01.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_02.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_03.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_04.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_01.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_02.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_03.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_04.png" alt="leaf" /></div>
+        </div>
+      </div>
+      <img src="./Images/bg.jpg" alt="Imgae" class="bg" />
+      <img src="./Images/girl.png" alt="Image" class="girl" />
+      <img src="./Images/trees.png" alt="Imgae" class="trees" />
+      <div class="login">
+        <h2>Sign In</h2>
+        <form>
+          <div class="inputBox">
+            <input type="text" id="username" required />
+            <label for="Username" id="label">Username</label>
+            <div class="usernameError Errors"></div>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="password" required />
+            <label for="Password" id="label">Password</label>
+            <div class="passwordError Errors"></div>
+            <div id="loggedIn">
+              <input type="checkbox" id="keepLoggedIn" />
+              <label for="keepLoggedIn" id="loggedInLabel">Remember me?</label>
+            </div>
+          </div>
+          <div class="inputBox">
+            <button id="btn" type="submit">Login</button>
+          </div>
+          <div class="group">
+            <a href="./forget.html">Forget password</a>
+            <a href="./signUp.html">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="./JavaScript/script.js" type="module"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+.container {
+    position: relative;
+    padding: 60px;
+    background-color: rgba(225, 225, 225, 0.25);
+    backdrop-filter: blur(15px);
+    border: 1px solid #fff;
+    border-bottom: rgba(225, 225, 225, 0.5);
+    border-right: rgba(225, 225, 225, 0.5);
+    border-radius: 20px;
+    width: 500px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.0.1);
+}
+
+.container .links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 1.25em;
+    margin-bottom: 40px;
+    text-align: center;
+
+}
+
+.container #signOutLink {
+    color: #8f2c24;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container #userLink {
+    color: #8f2c24;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.container h2 {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    font-weight: 600;
+    color: #8f2c24;
+}
+
+i {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: 20px;
+    left: 20px;
+}
+
+/*! Reponsive design */
+@media screen and (max-width: 480px){
+    .container .links{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

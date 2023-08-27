@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="./CSS/signUp.css" />
+  </head>
+  <body>
+    <section>
+      <div class="leaves">
+        <div class="set">
+          <div><img src="./Images/leaf_01.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_02.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_03.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_04.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_01.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_02.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_03.png" alt="leaf" /></div>
+          <div><img src="./Images/leaf_04.png" alt="leaf" /></div>
+        </div>
+      </div>
+      <img src="./Images/bg.jpg" alt="Imgae" class="bg" />
+      <img src="./Images/girl.png" alt="Image" class="girl" />
+      <img src="./Images/trees.png" alt="Imgae" class="trees" />
+      <div class="login">
+        <i>
+          <a href="./login.html">
+            <img src="./Images/arrow-left-solid.svg" />
+          </a>
+        </i>
+        <h2>Sign Up</h2>
+        <form>
+          <div class="inputBox">
+            <input type="text" id="username" required />
+            <label for="Username" id="label">Username</label>
+            <div class="usernameError Errors"></div>
+          </div>
+          <div class="inputBox">
+            <input type="text" id="email" required />
+            <label for="Email" id="label">Email</label>
+            <div class="emailError Errors"></div>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="password" required />
+            <label for="Password" id="label">Password</label>
+            <div class="passwordError Errors"></div>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="password2" required />
+            <label for="Password" id="label">Password again</label>
+            <div class="password2Error Errors"></div>
+          </div>
+          <div class="inputBox">
+            <button id="btn" type="submit">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- JavaScript -->
+    <script src="./JavaScript/signUp.js" type="module"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"
+      integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
